@@ -93,6 +93,7 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
   store: Store;
   columns: ColumnProps<T>[];
   components: TableComponents;
+  rcTable: any;
 
   constructor(props: TableProps<T>) {
     super(props);
@@ -910,6 +911,10 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
     }
   }
 
+  rcTableRef: any = (rcTable: any) => {
+    this.rcTable = rcTable;
+  }
+
   renderTable = (contextLocale: TableLocale) => {
     const locale = { ...contextLocale, ...this.props.locale };
     const { style, loading, className, prefixCls, showHeader, ...restProps } = this.props;
@@ -935,12 +940,11 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       expandIconColumnIndex = restProps.expandIconColumnIndex as number;
     }
 
-    console.log('table')
-
     return (
       <RcTable
         key="table"
         {...restProps}
+        ref={this.rcTableRef}
         onRow={this.onRow}
         components={this.components}
         prefixCls={prefixCls}
