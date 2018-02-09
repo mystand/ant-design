@@ -935,6 +935,8 @@ export default class Table<T> extends React.Component<TableProps<T>, TableState<
       expandIconColumnIndex = restProps.expandIconColumnIndex as number;
     }
 
+    console.log('table')
+
     return (
       <RcTable
         key="table"
