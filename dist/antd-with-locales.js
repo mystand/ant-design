@@ -1,10 +1,10 @@
 /*!
- * 
+ *
  * antd v3.1.6
- * 
+ *
  * Copyright 2015-present, Alipay, Inc.
  * All rights reserved.
- *       
+ *
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -799,7 +799,7 @@ module.exports = invariant;
       var array = this._array;
       var maxIndex = array.length - 1;
       var ii = 0;
-      return new Iterator(function() 
+      return new Iterator(function()
         {return ii > maxIndex ?
           iteratorDone() :
           iteratorValue(type, ii, array[reverse ? maxIndex - ii++ : ii++])}
@@ -1270,7 +1270,7 @@ module.exports = invariant;
 
     Repeat.prototype.__iterator = function(type, reverse) {var this$0 = this;
       var ii = 0;
-      return new Iterator(function() 
+      return new Iterator(function()
         {return ii < this$0.size ? iteratorValue(type, ii++, this$0._value) : iteratorDone()}
       );
     };
@@ -3454,7 +3454,7 @@ module.exports = invariant;
         return flipSequence;
       };
     }
-    reversedSequence.get = function(key, notSetValue) 
+    reversedSequence.get = function(key, notSetValue)
       {return iterable.get(useKeys ? key : -1 - key, notSetValue)};
     reversedSequence.has = function(key )
       {return iterable.has(useKeys ? key : -1 - key)};
@@ -3649,7 +3649,7 @@ module.exports = invariant;
         return this.cacheResult().__iterate(fn, reverse);
       }
       var iterations = 0;
-      iterable.__iterate(function(v, k, c) 
+      iterable.__iterate(function(v, k, c)
         {return predicate.call(context, v, k, c) && ++iterations && fn(v, k, this$0)}
       );
       return iterations;
@@ -3840,7 +3840,7 @@ module.exports = invariant;
     interposedSequence.size = iterable.size && iterable.size * 2 -1;
     interposedSequence.__iterateUncached = function(fn, reverse) {var this$0 = this;
       var iterations = 0;
-      iterable.__iterate(function(v, k) 
+      iterable.__iterate(function(v, k)
         {return (!iterations || fn(separator, iterations++, this$0) !== false) &&
         fn(v, iterations++, this$0) !== false},
         reverse
@@ -5412,7 +5412,7 @@ module.exports = invariant;
  *
  * @providesModule EditorState
  * @format
- * 
+ *
  */
 
 
@@ -6855,7 +6855,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_23__;
  *
  * @providesModule DraftModifier
  * @format
- * 
+ *
  */
 
 
@@ -7545,7 +7545,7 @@ KeyCode.isCharacterKey = function isCharacterKey(keyCode) {
  *
  * @providesModule CharacterMetadata
  * @format
- * 
+ *
  */
 
 
@@ -7757,7 +7757,7 @@ var warned = {};
  *
  * @providesModule ContentBlockNode
  * @format
- * 
+ *
  *
  * This file is a fork of ContentBlock adding support for nesting references by
  * providing links to children, parent, prevSibling, and nextSibling.
@@ -7941,7 +7941,7 @@ $exports.store = store;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 var nullthrows = function nullthrows(x) {
@@ -8357,7 +8357,7 @@ module.exports = mapObject(UserAgent, memoizeStringOnly);
  *
  * @providesModule generateRandomKey
  * @format
- * 
+ *
  */
 
 
@@ -9139,7 +9139,7 @@ module.exports = root;
  *
  * @providesModule Draft
  * @format
- * 
+ *
  */
 
 
@@ -9217,7 +9217,7 @@ module.exports = DraftPublic;
  *
  * @providesModule DraftFeatureFlags
  * @format
- * 
+ *
  */
 
 
@@ -9435,7 +9435,7 @@ module.exports = getNative;
  *
  * @providesModule ContentBlock
  * @format
- * 
+ *
  */
 
 
@@ -10917,7 +10917,7 @@ exports.create = _create3.default;
  *
  * @providesModule SelectionState
  * @format
- * 
+ *
  */
 
 
@@ -11474,7 +11474,7 @@ module.exports = cx;
       var array = this._array;
       var maxIndex = array.length - 1;
       var ii = 0;
-      return new Iterator(function() 
+      return new Iterator(function()
         {return ii > maxIndex ?
           iteratorDone() :
           iteratorValue(type, ii, array[reverse ? maxIndex - ii++ : ii++])}
@@ -11945,7 +11945,7 @@ module.exports = cx;
 
     Repeat.prototype.__iterator = function(type, reverse) {var this$0 = this;
       var ii = 0;
-      return new Iterator(function() 
+      return new Iterator(function()
         {return ii < this$0.size ? iteratorValue(type, ii++, this$0._value) : iteratorDone()}
       );
     };
@@ -14143,7 +14143,7 @@ module.exports = cx;
         return flipSequence;
       };
     }
-    reversedSequence.get = function(key, notSetValue) 
+    reversedSequence.get = function(key, notSetValue)
       {return iterable.get(useKeys ? key : -1 - key, notSetValue)};
     reversedSequence.has = function(key )
       {return iterable.has(useKeys ? key : -1 - key)};
@@ -14342,7 +14342,7 @@ module.exports = cx;
         return this.cacheResult().__iterate(fn, reverse);
       }
       var iterations = 0;
-      iterable.__iterate(function(v, k, c) 
+      iterable.__iterate(function(v, k, c)
         {return predicate.call(context, v, k, c) && ++iterations && fn(v, k, this$0)}
       );
       return iterations;
@@ -14533,7 +14533,7 @@ module.exports = cx;
     interposedSequence.size = iterable.size && iterable.size * 2 -1;
     interposedSequence.__iterateUncached = function(fn, reverse) {var this$0 = this;
       var iterations = 0;
-      iterable.__iterate(function(v, k) 
+      iterable.__iterate(function(v, k)
         {return (!iterations || fn(separator, iterations++, this$0) !== false) &&
         fn(v, iterations++, this$0) !== false},
         reverse
@@ -16109,7 +16109,7 @@ module.exports = function (bitmap, value) {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 function makeEmptyFunction(arg) {
@@ -16482,7 +16482,7 @@ function remove(array, item) {
  *
  * @providesModule BlockMapBuilder
  * @format
- * 
+ *
  */
 
 
@@ -16517,7 +16517,7 @@ module.exports = BlockMapBuilder;
  *
  * @providesModule findRangesImmutable
  * @format
- * 
+ *
  */
 
 
@@ -16566,7 +16566,7 @@ module.exports = findRangesImmutable;
  *
  * @providesModule isEventHandled
  * @format
- * 
+ *
  */
 
 
@@ -16596,7 +16596,7 @@ module.exports = isEventHandled;
  *
  * @providesModule DraftOffsetKey
  * @format
- * 
+ *
  */
 
 
@@ -16639,7 +16639,7 @@ module.exports = DraftOffsetKey;
  *
  * @providesModule removeTextWithStrategy
  * @format
- * 
+ *
  */
 
 
@@ -17469,7 +17469,7 @@ module.exports = getMapData;
  *
  * @providesModule getContentStateFragment
  * @format
- * 
+ *
  */
 
 
@@ -17545,7 +17545,7 @@ var _extends = _assign || function (target) { for (var i = 1; i < arguments.leng
  *
  * @providesModule DraftEntity
  * @format
- * 
+ *
  */
 
 var DraftEntityInstance = __webpack_require__(291);
@@ -21848,7 +21848,7 @@ var SHOW_CHILD = 'SHOW_CHILD';
  *
  * @providesModule ContentState
  * @format
- * 
+ *
  */
 
 
@@ -22052,7 +22052,7 @@ module.exports = ContentState;
  *
  * @providesModule sanitizeDraftText
  * @format
- * 
+ *
  */
 
 
@@ -22077,7 +22077,7 @@ module.exports = sanitizeDraftText;
  * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
- * 
+ *
  */
 
 /**
@@ -22192,7 +22192,7 @@ module.exports = UnicodeBidiDirection;
  *
  * @providesModule DefaultDraftBlockRenderMap
  * @format
- * 
+ *
  */
 
 
@@ -22308,7 +22308,7 @@ module.exports = {
  *
  * @providesModule getEntityKeyForSelection
  * @format
- * 
+ *
  */
 
 
@@ -22370,7 +22370,7 @@ module.exports = getEntityKeyForSelection;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 var isTextNode = __webpack_require__(705);
@@ -22534,7 +22534,7 @@ module.exports = getScrollPosition;
  *
  * @providesModule findAncestorOffsetKey
  * @format
- * 
+ *
  */
 
 
@@ -22766,7 +22766,7 @@ module.exports = findAncestorOffsetKey;
  *
  * @providesModule KeyBindingUtil
  * @format
- * 
+ *
  */
 
 
@@ -22811,7 +22811,7 @@ module.exports = KeyBindingUtil;
  *
  * @providesModule moveSelectionBackward
  * @format
- * 
+ *
  */
 
 
@@ -34002,7 +34002,7 @@ TimelineItem.defaultProps = {
  *
  * @providesModule randomizeBlockMapKeys
  * @format
- * 
+ *
  */
 
 
@@ -34121,7 +34121,7 @@ module.exports = randomizeBlockMapKeys;
  *
  * @providesModule removeEntitiesAtEdges
  * @format
- * 
+ *
  */
 
 
@@ -34228,7 +34228,7 @@ module.exports = removeEntitiesAtEdges;
  *
  * @providesModule insertIntoList
  * @format
- * 
+ *
  */
 
 
@@ -34272,7 +34272,7 @@ module.exports = insertIntoList;
  *
  * @providesModule getNextDelimiterBlockKey
  * @format
- * 
+ *
  *
  * This is unstable and not part of the public API and should not be used by
  * production systems. This file may be update/removed without notice.
@@ -34329,7 +34329,7 @@ module.exports = getNextDelimiterBlockKey;
  *
  * @providesModule BlockTree
  * @format
- * 
+ *
  */
 
 
@@ -34449,7 +34449,7 @@ module.exports = BlockTree;
  * @providesModule DraftEntityInstance
  * @legacyServerCallableInstance
  * @format
- * 
+ *
  */
 
 
@@ -34521,7 +34521,7 @@ module.exports = DraftEntityInstance;
  * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
- * 
+ *
  */
 
 /**
@@ -34684,7 +34684,7 @@ module.exports = UnicodeBidi;
  *
  * @providesModule DefaultDraftInlineStyle
  * @format
- * 
+ *
  */
 
 
@@ -34727,7 +34727,7 @@ module.exports = {
  *
  * @providesModule isSelectionAtLeafStart
  * @format
- * 
+ *
  */
 
 
@@ -34781,7 +34781,7 @@ module.exports = isSelectionAtLeafStart;
  *
  * @providesModule DraftEditorBlock.react
  * @format
- * 
+ *
  */
 
 
@@ -35349,7 +35349,7 @@ module.exports = DataTransfer;
  *
  * @providesModule getSelectionOffsetKeyForNode
  * @format
- * 
+ *
  */
 
 
@@ -35392,7 +35392,7 @@ module.exports = getSelectionOffsetKeyForNode;
  *
  * @providesModule getTextContentFromFiles
  * @format
- * 
+ *
  */
 
 
@@ -35479,7 +35479,7 @@ module.exports = getTextContentFromFiles;
  *
  * @providesModule getUpdatedSelectionState
  * @format
- * 
+ *
  */
 
 
@@ -35561,7 +35561,7 @@ module.exports = getUpdatedSelectionState;
  *
  * @providesModule getFragmentFromSelection
  * @format
- * 
+ *
  */
 
 
@@ -35595,7 +35595,7 @@ module.exports = getFragmentFromSelection;
  *
  * @providesModule getRangeClientRects
  * @format
- * 
+ *
  */
 
 
@@ -35664,7 +35664,7 @@ module.exports = getRangeClientRects;
  *
  * @providesModule getDraftEditorSelectionWithNodes
  * @format
- * 
+ *
  */
 
 
@@ -35853,7 +35853,7 @@ module.exports = getDraftEditorSelectionWithNodes;
  *
  * @providesModule DraftRemovableWord
  * @format
- * 
+ *
  */
 
 
@@ -35910,7 +35910,7 @@ module.exports = DraftRemovableWord;
  *
  * @providesModule moveSelectionForward
  * @format
- * 
+ *
  */
 
 
@@ -35961,7 +35961,7 @@ module.exports = moveSelectionForward;
  *
  * @providesModule convertFromHTMLToContentBlocks
  * @format
- * 
+ *
  */
 
 
@@ -36619,7 +36619,7 @@ module.exports = convertFromHTMLtoContentBlocks;
  *
  * @providesModule getSafeBodyFromHTML
  * @format
- * 
+ *
  */
 
 
@@ -36664,7 +36664,7 @@ module.exports = getSafeBodyFromHTML;
  *
  * @providesModule RichTextEditorUtil
  * @format
- * 
+ *
  */
 
 
@@ -36980,7 +36980,7 @@ module.exports = RichTextEditorUtil;
  *
  * @providesModule getDefaultKeyBinding
  * @format
- * 
+ *
  */
 
 
@@ -37110,7 +37110,7 @@ module.exports = getDefaultKeyBinding;
  *
  * @providesModule DraftStringKey
  * @format
- * 
+ *
  */
 
 
@@ -49410,11 +49410,11 @@ var _initialiseProps = function _initialiseProps() {
 
   this.onNavKeyDown = function (e) {
     var eventKeyCode = e.keyCode;
-    if (eventKeyCode === __WEBPACK_IMPORTED_MODULE_9__KeyCode__["a" /* default */].RIGHT || eventKeyCode === __WEBPACK_IMPORTED_MODULE_9__KeyCode__["a" /* default */].DOWN) {
+    if (eventKeyCode === __WEBPACK_IMPORTED_MODULE_9__KeyCode__["a" /* default */].RIGHT) {
       e.preventDefault();
       var nextKey = _this2.getNextActiveKey(true);
       _this2.onTabClick(nextKey);
-    } else if (eventKeyCode === __WEBPACK_IMPORTED_MODULE_9__KeyCode__["a" /* default */].LEFT || eventKeyCode === __WEBPACK_IMPORTED_MODULE_9__KeyCode__["a" /* default */].UP) {
+    } else if (eventKeyCode === __WEBPACK_IMPORTED_MODULE_9__KeyCode__["a" /* default */].LEFT) {
       e.preventDefault();
       var previousKey = _this2.getNextActiveKey(false);
       _this2.onTabClick(previousKey);
@@ -49759,7 +49759,7 @@ function _componentDidUpdate(component, init) {
       return;
     }
     var nextPrev = this.setNextPrev();
-        
+
     if (this.isNextPrevShown(this.state) !== this.isNextPrevShown(nextPrev)) {
       this.setState({}, this.scrollToActiveTab);
     } else if (!prevProps || props.activeKey !== prevProps.activeKey) {
@@ -78506,7 +78506,7 @@ __WEBPACK_IMPORTED_MODULE_1__component_Mention_react__["a" /* default */].getMen
  *
  * @providesModule AtomicBlockUtils
  * @format
- * 
+ *
  */
 
 
@@ -78641,7 +78641,7 @@ module.exports = AtomicBlockUtils;
  *
  * @providesModule DraftFeatureFlags-core
  * @format
- * 
+ *
  */
 
 
@@ -78670,7 +78670,7 @@ module.exports = DraftFeatureFlags;
  *
  * @providesModule ContentStateInlineStyle
  * @format
- * 
+ *
  */
 
 
@@ -78748,7 +78748,7 @@ module.exports = ContentStateInlineStyle;
  *
  * @providesModule applyEntityToContentState
  * @format
- * 
+ *
  */
 
 
@@ -78798,7 +78798,7 @@ module.exports = applyEntityToContentState;
  *
  * @providesModule applyEntityToContentBlock
  * @format
- * 
+ *
  */
 
 
@@ -78831,7 +78831,7 @@ module.exports = applyEntityToContentBlock;
  *
  * @providesModule getCharacterRemovalRange
  * @format
- * 
+ *
  */
 
 
@@ -78952,7 +78952,7 @@ module.exports = getCharacterRemovalRange;
  *
  * @providesModule DraftEntitySegments
  * @format
- * 
+ *
  */
 
 
@@ -79057,7 +79057,7 @@ module.exports = DraftEntitySegments;
  *
  * @providesModule getRangesForDraftEntity
  * @format
- * 
+ *
  */
 
 
@@ -79102,7 +79102,7 @@ module.exports = getRangesForDraftEntity;
  *
  * @providesModule insertFragmentIntoContentState
  * @format
- * 
+ *
  */
 
 
@@ -79359,7 +79359,7 @@ module.exports = insertFragmentIntoContentState;
  *
  * @providesModule insertTextIntoContentState
  * @format
- * 
+ *
  */
 
 
@@ -79419,7 +79419,7 @@ module.exports = insertTextIntoContentState;
  *
  * @providesModule modifyBlockForContentState
  * @format
- * 
+ *
  */
 
 
@@ -79463,7 +79463,7 @@ module.exports = modifyBlockForContentState;
  *
  * @providesModule removeRangeFromContentState
  * @format
- * 
+ *
  */
 
 
@@ -79775,7 +79775,7 @@ module.exports = removeRangeFromContentState;
  *
  * @providesModule splitBlockInContentState
  * @format
- * 
+ *
  */
 
 
@@ -79912,7 +79912,7 @@ module.exports = splitBlockInContentState;
  *
  * @providesModule EditorBidiService
  * @format
- * 
+ *
  */
 
 
@@ -79963,7 +79963,7 @@ module.exports = EditorBidiService;
  * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
- * 
+ *
  */
 
 /**
@@ -80070,7 +80070,7 @@ module.exports = UnicodeBidiService;
  *
  * @providesModule moveBlockInContentState
  * @format
- * 
+ *
  */
 
 
@@ -80269,7 +80269,7 @@ module.exports = moveBlockInContentState;
  *
  * @providesModule CompositeDraftDecorator
  * @format
- * 
+ *
  */
 
 
@@ -80389,7 +80389,7 @@ module.exports = CompositeDraftDecorator;
  *
  * @providesModule DraftEditor.react
  * @format
- * 
+ *
  * @preventMunge
  */
 
@@ -80867,7 +80867,7 @@ module.exports = DraftEditor;
  *
  * @providesModule DraftEditorCompositionHandler
  * @format
- * 
+ *
  */
 
 
@@ -81048,7 +81048,7 @@ module.exports = DraftEditorCompositionHandler;
  *
  * @providesModule DraftEditorContents.react
  * @format
- * 
+ *
  */
 
 
@@ -81072,7 +81072,7 @@ module.exports = DraftEditorContents;
  *
  * @providesModule DraftEditorContents-core.react
  * @format
- * 
+ *
  */
 
 
@@ -81328,7 +81328,7 @@ module.exports = DraftEditorContents;
  *
  * @providesModule DraftEditorLeaf.react
  * @format
- * 
+ *
  */
 
 
@@ -81504,7 +81504,7 @@ module.exports = DraftEditorLeaf;
  *
  * @providesModule DraftEditorTextNode.react
  * @format
- * 
+ *
  */
 
 
@@ -83235,7 +83235,7 @@ module.exports = mapObject;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  * @typechecks static-only
  */
 
@@ -83272,7 +83272,7 @@ module.exports = memoizeStringOnly;
  *
  * @providesModule setDraftEditorSelection
  * @format
- * 
+ *
  */
 
 
@@ -83911,7 +83911,7 @@ function getViewportWidth() {
    * This source code is licensed under the MIT license found in the
    * LICENSE file in the root directory of this source tree.
    *
-   * 
+   *
    * @typechecks
    */
 
@@ -84008,7 +84008,7 @@ module.exports = joinClasses;
  *
  * @providesModule DraftEditorDragHandler
  * @format
- * 
+ *
  */
 
 
@@ -84290,7 +84290,7 @@ module.exports = createArrayFromMixed;
  *
  * @providesModule DraftEditorEditHandler
  * @format
- * 
+ *
  */
 
 
@@ -84340,7 +84340,7 @@ module.exports = DraftEditorEditHandler;
  *
  * @providesModule editOnBeforeInput
  * @format
- * 
+ *
  */
 
 
@@ -84729,7 +84729,7 @@ process.umask = function() { return 0; };
  *
  * @providesModule editOnBlur
  * @format
- * 
+ *
  */
 
 
@@ -84785,7 +84785,7 @@ module.exports = editOnBlur;
  *
  * @providesModule editOnCompositionStart
  * @format
- * 
+ *
  */
 
 
@@ -84820,7 +84820,7 @@ module.exports = editOnCompositionStart;
  *
  * @providesModule editOnCopy
  * @format
- * 
+ *
  */
 
 
@@ -84862,7 +84862,7 @@ module.exports = editOnCopy;
  *
  * @providesModule editOnCut
  * @format
- * 
+ *
  */
 
 
@@ -84937,7 +84937,7 @@ module.exports = editOnCut;
  *
  * @providesModule editOnDragOver
  * @format
- * 
+ *
  */
 
 
@@ -84968,7 +84968,7 @@ module.exports = editOnDragOver;
  *
  * @providesModule editOnDragStart
  * @format
- * 
+ *
  */
 
 
@@ -84998,7 +84998,7 @@ module.exports = editOnDragStart;
  *
  * @providesModule editOnFocus
  * @format
- * 
+ *
  */
 
 
@@ -85050,7 +85050,7 @@ module.exports = editOnFocus;
  *
  * @providesModule editOnInput
  * @format
- * 
+ *
  */
 
 
@@ -85229,7 +85229,7 @@ module.exports = editOnInput;
  *
  * @providesModule editOnKeyDown
  * @format
- * 
+ *
  */
 
 
@@ -85389,7 +85389,7 @@ module.exports = editOnKeyDown;
  *
  * @providesModule SecondaryClipboard
  * @format
- * 
+ *
  */
 
 
@@ -85465,7 +85465,7 @@ module.exports = SecondaryClipboard;
  *
  * @providesModule keyCommandBackspaceToStartOfLine
  * @format
- * 
+ *
  */
 
 
@@ -85518,7 +85518,7 @@ module.exports = keyCommandBackspaceToStartOfLine;
  *
  * @providesModule expandRangeToStartOfLine
  * @format
- * 
+ *
  */
 
 var UnicodeUtils = __webpack_require__(54);
@@ -85714,7 +85714,7 @@ module.exports = expandRangeToStartOfLine;
  *
  * @providesModule keyCommandBackspaceWord
  * @format
- * 
+ *
  */
 
 
@@ -85766,7 +85766,7 @@ module.exports = keyCommandBackspaceWord;
  *
  * @typechecks
  * @stub
- * 
+ *
  */
 
 
@@ -85809,7 +85809,7 @@ module.exports = {
  *
  * @providesModule keyCommandDeleteWord
  * @format
- * 
+ *
  */
 
 
@@ -85861,7 +85861,7 @@ module.exports = keyCommandDeleteWord;
  *
  * @providesModule keyCommandInsertNewline
  * @format
- * 
+ *
  */
 
 
@@ -85891,7 +85891,7 @@ module.exports = keyCommandInsertNewline;
  *
  * @providesModule keyCommandMoveSelectionToEndOfBlock
  * @format
- * 
+ *
  */
 
 
@@ -85935,7 +85935,7 @@ module.exports = keyCommandMoveSelectionToEndOfBlock;
  *
  * @providesModule keyCommandMoveSelectionToStartOfBlock
  * @format
- * 
+ *
  */
 
 
@@ -85979,7 +85979,7 @@ module.exports = keyCommandMoveSelectionToStartOfBlock;
  *
  * @providesModule keyCommandPlainBackspace
  * @format
- * 
+ *
  */
 
 
@@ -86030,7 +86030,7 @@ module.exports = keyCommandPlainBackspace;
  *
  * @providesModule keyCommandPlainDelete
  * @format
- * 
+ *
  */
 
 
@@ -86082,7 +86082,7 @@ module.exports = keyCommandPlainDelete;
  *
  * @providesModule keyCommandTransposeCharacters
  * @format
- * 
+ *
  */
 
 
@@ -86167,7 +86167,7 @@ module.exports = keyCommandTransposeCharacters;
  *
  * @providesModule keyCommandUndo
  * @format
- * 
+ *
  */
 
 
@@ -86222,7 +86222,7 @@ module.exports = keyCommandUndo;
  *
  * @providesModule editOnPaste
  * @format
- * 
+ *
  */
 
 
@@ -86393,7 +86393,7 @@ module.exports = editOnPaste;
  *
  * @providesModule DraftPasteProcessor
  * @format
- * 
+ *
  */
 
 
@@ -86468,7 +86468,7 @@ module.exports = DraftPasteProcessor;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -86506,7 +86506,7 @@ module.exports = URI;
  *
  * @providesModule adjustBlockDepthForContentState
  * @format
- * 
+ *
  */
 
 
@@ -86551,7 +86551,7 @@ module.exports = adjustBlockDepthForContentState;
  *
  * @providesModule splitTextIntoTextBlocks
  * @format
- * 
+ *
  */
 
 
@@ -86579,7 +86579,7 @@ module.exports = splitTextIntoTextBlocks;
  *
  * @providesModule editOnSelect
  * @format
- * 
+ *
  */
 
 
@@ -86629,7 +86629,7 @@ module.exports = editOnSelect;
  *
  * @providesModule getDraftEditorSelection
  * @format
- * 
+ *
  */
 
 
@@ -86672,7 +86672,7 @@ module.exports = getDraftEditorSelection;
  *
  * @providesModule DraftEditorPlaceholder.react
  * @format
- * 
+ *
  */
 
 
@@ -86752,7 +86752,7 @@ module.exports = DraftEditorPlaceholder;
  *
  * @providesModule convertFromDraftStateToRaw
  * @format
- * 
+ *
  */
 
 
@@ -86898,7 +86898,7 @@ module.exports = convertFromDraftStateToRaw;
  *
  * @providesModule encodeEntityRanges
  * @format
- * 
+ *
  */
 
 
@@ -86946,7 +86946,7 @@ module.exports = encodeEntityRanges;
  *
  * @providesModule encodeInlineStyleRanges
  * @format
- * 
+ *
  */
 
 
@@ -87021,7 +87021,7 @@ module.exports = encodeInlineStyleRanges;
  *
  * @providesModule convertFromRawToDraftState
  * @format
- * 
+ *
  */
 
 
@@ -87261,7 +87261,7 @@ var _extends = _assign || function (target) { for (var i = 1; i < arguments.leng
  *
  * @providesModule DraftTreeAdapter
  * @format
- * 
+ *
  *
  * This is unstable and not part of the public API and should not be used by
  * production systems. This file may be update/removed without notice.
@@ -87404,7 +87404,7 @@ module.exports = DraftTreeAdapter;
  *
  * @providesModule createCharacterList
  * @format
- * 
+ *
  */
 
 
@@ -87440,7 +87440,7 @@ module.exports = createCharacterList;
  *
  * @providesModule decodeEntityRanges
  * @format
- * 
+ *
  */
 
 
@@ -87486,7 +87486,7 @@ module.exports = decodeEntityRanges;
  *
  * @providesModule decodeInlineStyleRanges
  * @format
- * 
+ *
  */
 
 
@@ -87536,7 +87536,7 @@ module.exports = decodeInlineStyleRanges;
  *
  * @providesModule getVisibleSelectionRect
  * @format
- * 
+ *
  */
 
 
@@ -87589,7 +87589,7 @@ module.exports = getVisibleSelectionRect;
  *
  * @providesModule getRangeBoundingClientRect
  * @format
- * 
+ *
  */
 
 

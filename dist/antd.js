@@ -49539,11 +49539,11 @@ var _initialiseProps = function _initialiseProps() {
 
   this.onNavKeyDown = function (e) {
     var eventKeyCode = e.keyCode;
-    if (eventKeyCode === __WEBPACK_IMPORTED_MODULE_9__KeyCode__["a" /* default */].RIGHT || eventKeyCode === __WEBPACK_IMPORTED_MODULE_9__KeyCode__["a" /* default */].DOWN) {
+    if (eventKeyCode === __WEBPACK_IMPORTED_MODULE_9__KeyCode__["a" /* default */].RIGHT) {
       e.preventDefault();
       var nextKey = _this2.getNextActiveKey(true);
       _this2.onTabClick(nextKey);
-    } else if (eventKeyCode === __WEBPACK_IMPORTED_MODULE_9__KeyCode__["a" /* default */].LEFT || eventKeyCode === __WEBPACK_IMPORTED_MODULE_9__KeyCode__["a" /* default */].UP) {
+    } else if (eventKeyCode === __WEBPACK_IMPORTED_MODULE_9__KeyCode__["a" /* default */].LEFT) {
       e.preventDefault();
       var previousKey = _this2.getNextActiveKey(false);
       _this2.onTabClick(previousKey);
