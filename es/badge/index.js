@@ -45,6 +45,7 @@ var Badge = function (_React$Component) {
                 status = _a.status,
                 text = _a.text,
                 offset = _a.offset,
+                title = _a.title,
                 restProps = __rest(_a, ["count", "showZero", "prefixCls", "scrollNumberPrefixCls", "overflowCount", "className", "style", "children", "dot", "status", "text", "offset"]);
             var isDot = dot || status;
             var displayCount = count > overflowCount ? overflowCount + '+' : count;
@@ -72,7 +73,7 @@ var Badge = function (_React$Component) {
                     )
                 );
             }
-            var scrollNumber = hidden ? null : React.createElement(ScrollNumber, { prefixCls: scrollNumberPrefixCls, 'data-show': !hidden, className: scrollNumberCls, count: displayCount, title: count, style: styleWithOffset });
+            var scrollNumber = hidden ? null : React.createElement(ScrollNumber, { prefixCls: scrollNumberPrefixCls, 'data-show': !hidden, className: scrollNumberCls, count: displayCount, title: title || count, style: styleWithOffset });
             var statusText = hidden || !text ? null : React.createElement(
                 'span',
                 { className: prefixCls + '-status-text' },
