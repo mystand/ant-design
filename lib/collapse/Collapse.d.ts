@@ -11,6 +11,7 @@ export interface CollapseProps {
     className?: string;
     bordered?: boolean;
     prefixCls?: string;
+    destroyInactivePanel?: boolean;
 }
 export default class Collapse extends React.Component<CollapseProps, any> {
     static Panel: typeof CollapsePanel;
